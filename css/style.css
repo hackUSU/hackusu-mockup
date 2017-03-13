@@ -93,7 +93,10 @@ a:link, a:visited, a:active {
       margin-top: 5px; }
     .content-container .content #about-list {
       text-align: left;
-      margin-left: 20%; }
+      margin-left: 10%; }
+      .content-container .content #about-list a:link, .content-container .content #about-list a:visited, .content-container .content #about-list a:active {
+        color: #afafaf;
+        text-decoration: none; }
     .content-container .content .email-btn {
       background-color: #000;
       color: #3067d6;
