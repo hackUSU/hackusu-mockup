@@ -74,7 +74,7 @@ a:link, a:visited, a:active {
 
 .content-container {
   position: absolute;
-  top: 250px;
+  top: 275px;
   text-align: center;
   width: 100%;
   z-index: 2;
@@ -84,7 +84,7 @@ a:link, a:visited, a:active {
     background-color: rgba(89, 89, 89, 0.7);
     width: 50%;
     margin-left: 25%;
-    margin-top: 100px;
+    margin-top: 75px;
     padding: 0px 15px 15px 15px; }
     .content-container .content hr {
       border-color: #afafaf; }
