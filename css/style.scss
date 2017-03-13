@@ -93,11 +93,12 @@ a:link, a:visited, a:active{
     margin-left: 25%;
     margin-top: 75px;
     padding: 0px 15px 15px 15px;
+    padding-top: 20px;
     hr{
       border-color: $light-grey;
     }
     h2{
-      padding-top: 20px;
+      margin-top: 5px;
     }
     #about-list{
       text-align: left;
