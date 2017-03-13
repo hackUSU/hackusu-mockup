@@ -90,8 +90,9 @@ a:link, a:visited, a:active {
       border-color: #afafaf; }
     .content-container .content h2 {
       padding-top: 20px; }
-    .content-container .content .list {
-      text-align: left; }
+    .content-container .content #about-list {
+      text-align: left;
+      margin-left: 20%; }
     .content-container .content .email-btn {
       background-color: #000;
       color: #3067d6;
