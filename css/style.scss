@@ -60,7 +60,7 @@ a:link, a:visited, a:active{
   position: absolute;
   z-index: 2;
   text-align: center;
-  @include outline-letter($white, $black);
+  color: $light-grey;
   top: 275px;
   width: 100%;
   font-size: 30px;
@@ -75,32 +75,51 @@ a:link, a:visited, a:active{
   width: 25%;
   padding: 20px 0px;
   margin-left: 37%;
+  margin-top: 120px;
   @include border-radius(5px);
 }
 
 .content-container{
   position: absolute;
-  top:350px;
+  top:250px;
   text-align: center;
   width: 100%;
   z-index: 2;
   padding-bottom: 100px;
-  #projects{
-    background-color: $grey;
+  color: $light-grey;
+  .content{
+    background-color: rgba(89,89,89,.7);
     width: 50%;
     margin-left: 25%;
+    margin-top: 100px;
     padding: 0px 15px 15px 15px;
     hr{
-      border-color: $black;
+      border-color: $light-grey;
+    }
+    h2{
+      padding-top: 20px;
+    }
+    .list{
+      text-align: left;
+
+    }
+    .email-btn{
+      background-color: $black;
+      color: $blue;
+      width: 40%;
+      margin-left: 30%;
+      padding: 15px;
+      text-transform: uppercase;
+      border-radius: 5px;
     }
   }
 }
 
 #footer{
-  position: absolute;
+  position: fixed;
   z-index: 2;
   background-color: $black;
-  bottom: -100px;
+  bottom: 0px;
   width: 100%;
   height: 75px;
   text-align: center;
