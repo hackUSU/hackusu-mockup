@@ -1,0 +1,148 @@
+
+@import "defines";
+
+body{
+  margin: 0px;
+  font-family: 'Roboto';
+}
+
+a:link, a:visited, a:active{
+  color: $black;
+}
+
+#background-img{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0px;
+  img{
+    width: 100%;
+    height: 100%;
+    opacity: .9;
+  }
+}
+
+#main-logo{
+  z-index: 2;
+  margin-top: 100px;
+  position: relative;
+  img{
+    width: 50%;
+    margin-left: 25%;
+  }
+}
+
+#nav-bar{
+  text-align: center;
+  background-color: $black;
+  color: $grey;
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+  top: 0px;
+  a{
+    color: $grey;
+  }
+  a:hover{
+    color: $blue;
+  }
+  li{
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 40px;
+    font-size: 22px;
+  }
+}
+
+#quote{
+  text-transform: uppercase;
+  position: absolute;
+  z-index: 2;
+  text-align: center;
+  @include outline-letter($white, $black);
+  top: 275px;
+  width: 100%;
+  font-size: 30px;
+}
+
+#join{
+  // position: absolute;
+  z-index: 2;
+  text-transform: uppercase;
+  background-color: $grey;
+  text-align: center;
+  width: 25%;
+  padding: 20px 0px;
+  margin-left: 37%;
+  @include border-radius(5px);
+}
+
+.content-container{
+  position: absolute;
+  top:350px;
+  text-align: center;
+  width: 100%;
+  z-index: 2;
+  padding-bottom: 100px;
+  #projects{
+    background-color: $grey;
+    width: 50%;
+    margin-left: 25%;
+    padding: 0px 15px 15px 15px;
+    hr{
+      border-color: $black;
+    }
+  }
+}
+
+
+
+
+
+
+#footer{
+  position: absolute;
+  z-index: 2;
+  background-color: $black;
+  bottom: -100px;
+  width: 100%;
+  height: 75px;
+  text-align: center;
+  color: $blue;
+  #icons{
+    margin-top: -5px;
+    margin-left: -40px;
+    img{
+      height: 20px;
+      margin: 0px 10px;
+    }
+    li{
+      text-decoration: none;
+      display: inline-block;
+    }
+    #fb{
+      img{
+        filter: grayscale(1);
+        &:hover{
+          filter: grayscale(0);
+          @include filter-transition(.5s);
+        }
+      }
+    }
+    #git{
+      img{
+        filter: contrast(0%);
+      }
+    }
+    #twr{
+      img{
+        filter: grayscale(1);
+        &:hover{
+          filter: grayscale(0);
+          @include filter-transition(.5s);
+        }
+      }
+    }
+  }
+}

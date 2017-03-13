@@ -1,0 +1,47 @@
+$black: #000;
+$white: #fff;
+$grey: #898989;
+$blue: #3067d6;
+
+@font-face {
+  font-family: 'Parkway Hotel';
+  src: url(../fonts/ParkwayHotel.ttf);
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src:  url(../fonts/Roboto/Roboto-Bold.ttf),
+        url(../fonts/Roboto/Roboto-Light.ttf),
+        url(../fonts/Roboto/Roboto-MediumItalic.ttf),
+        url(../fonts/Roboto/Roboto-ThinItalic.ttf),
+        url(../fonts/Roboto/Roboto-Black.ttf),
+        url(../fonts/Roboto/Roboto-BoldItalic.ttf),
+        url(../fonts/Roboto/Roboto-LightItalic.ttf),
+        url(../fonts/Roboto/Roboto-Regular.ttf),
+        url(../fonts/Roboto/Roboto-BlackItalic.ttf),
+        url(../fonts/Roboto/Roboto-Italic.ttf),
+        url(../fonts/Roboto/Roboto-Medium.ttf),
+        url(../fonts/Roboto/Roboto-Thin.ttf);
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin filter-transition($time) {
+  -webkit-transition: $time -webkit-filter linear;
+  -moz-transition: $time -moz-filter linear;
+  -moz-transition: $time filter linear;
+  -ms-transition: $time -ms-filter linear;
+  -o-transition: $time -o-filter linear;
+  transition: $time filter linear;
+}
+
+@mixin outline-letter($outline, $fill) {
+  -webkit-text-fill-color: $fill; /* Will override color (regardless of order) */
+   -webkit-text-stroke-width: .25px;
+   -webkit-text-stroke-color: $outline;
+}
